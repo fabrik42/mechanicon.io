@@ -1,5 +1,13 @@
+* Introduction
+#+NAME: Logo
+[[./assets/images/logo_black.svg]]
 
-** Deployment
+This is the source code of the official website for the mechanical keyboard meetup called MECHANICON.
+* Technology
+This website is based on Jekyll, Bootstrap V5 and Dracula UI.
+
+Nothing is optimized yet. Contributions are welcome!
+* Deployment
 You will need the Netlify CLI to make manual deploys.
 
 To set it up, you need to provide a Netlify personal access token using a =NETLIFY_AUTH_TOKEN= environment variable.
