@@ -1,0 +1,10 @@
+
+** Deployment
+You will need the Netlify CLI to make manual deploys.
+
+To set it up, you need to provide a Netlify personal access token using a =NETLIFY_AUTH_TOKEN= environment variable.
+
+#+begin_src sh
+be jekyll build
+yarn run netlify deploy --prod --dir ./_site
+#+end_src

@@ -1,0 +1,10 @@
+{
+  "name": "mechanicon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Christian Bäuerlein <fabrik42@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dracula-ui": "^1.0.3"
+  }
+}

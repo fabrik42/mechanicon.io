@@ -1,0 +1,44 @@
+---
+---
+@import "../../node_modules/dracula-ui/styles/dracula-ui.css";
+
+.drac-bg-pure-white {
+  background: #FFF;
+}
+
+body {
+  background: #1d1e26;
+  margin: 0;
+}
+
+@media (max-width: 76rem) {
+  .drac-box h1 {
+    font-size: 2.25rem !important;
+  }
+}
+
+.sponsor-img {
+ .sponsor-img-wrapper {
+    text-align: center;
+    float: left;
+
+    width: 28%;
+    height: 28%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
+  }
+}
+
+.social-icon {
+  width: 40px;
+}
