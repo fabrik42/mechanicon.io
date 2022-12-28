@@ -19,8 +19,8 @@
 - name: Oblotzky
   image_path: "./assets/images/sponsors/oblotzky_industries_logo.png"
   box_background: "pure-white"
-- name: Keebsupply/0xCB
-  image_path: "./assets/images/sponsors/0xCB_b.png"
+- name: KeebSupply
+  image_path: "./assets/images/sponsors/keeb-supply.png"
   box_background: "cyan-green"
 - name: The Teleport
   image_path: "./assets/images/sponsors/teleport-white.png"
