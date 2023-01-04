@@ -13,21 +13,27 @@
 - name: Eloquentkeys
   image_path: "./assets/images/sponsors/eloquentclicks.jpg"
   box_background: "pure-white"
+- name: Keebwerk
+  image_path: "./assets/images/sponsors/keebwerk.png"
+  box_background: "cyan-green"
+- name: The Teleport
+  image_path: "./assets/images/sponsors/teleport-white.png"
+  box_background: "purple-cyan"
 - name: Keygem
   image_path: "./assets/images/sponsors/keygem.png"
   box_background: "yellow-pink"
 - name: Oblotzky
   image_path: "./assets/images/sponsors/oblotzky_industries_logo.png"
   box_background: "pure-white"
-- name: KeebSupply
-  image_path: "./assets/images/sponsors/keeb-supply.png"
-  box_background: "cyan-green"
-- name: The Teleport
-  image_path: "./assets/images/sponsors/teleport-white.png"
-  box_background: "purple-cyan"
 - name: Wooting
   image_path: "./assets/images/sponsors/wooting.png"
   box_background: "yellow-pink"
+- name: keebstuff
+  image_path: "./assets/images/sponsors/keebstuff.png"
+  box_background: "white"
+- name: keebsupply
+  image_path: "./assets/images/sponsors/keeb-supply.png"
+  box_background: "cyan-green"
 - name: ioki
   image_path: "./assets/images/sponsors/ioki.png"
   box_background: "pink-purple"
