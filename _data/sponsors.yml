@@ -1,39 +1,52 @@
 - name: CandyKeys
+  website: "https://candykeys.com"
   image_path: "./assets/images/sponsors/candykeys.png"
   box_background: "white"
 - name: GMK
+  website: "https://www.gmk-electronic-design.de"
   image_path: "./assets/images/sponsors/gmk.png"
   box_background: "pink-purple"
 - name: Cherry
+  website: "https://www.cherrymx.de"
   image_path: "./assets/images/sponsors/cherry.png"
   box_background: "purple-cyan"
 - name: 42keebs
+  website: "https://42keebs.eu"
   image_path: "./assets/images/sponsors/42keebs.png"
-  box_background: "black"
+  box_background: "42-keebs"
 - name: Eloquentkeys
+  website: "https://www.eloquentclicks.com"
   image_path: "./assets/images/sponsors/eloquentclicks.jpg"
   box_background: "pure-white"
 - name: Keebwerk
+  website: "https://www.keebwerk.com"
   image_path: "./assets/images/sponsors/keebwerk.png"
   box_background: "cyan-green"
 - name: The Teleport
+  website: "https://www.nvil.gg"
   image_path: "./assets/images/sponsors/teleport-white.png"
   box_background: "purple-cyan"
 - name: Keygem
+  website: "https://keygem.com"
   image_path: "./assets/images/sponsors/keygem.png"
   box_background: "yellow-pink"
 - name: Oblotzky
+  website: "https://oblotzky.industries"
   image_path: "./assets/images/sponsors/oblotzky_industries_logo.png"
   box_background: "pure-white"
 - name: Wooting
+  website: "https://wooting.io"
   image_path: "./assets/images/sponsors/wooting.png"
   box_background: "yellow-pink"
 - name: keebstuff
+  website: "https://keebstuff.com"
   image_path: "./assets/images/sponsors/keebstuff.png"
   box_background: "white"
 - name: keebsupply
+  website: "https://keeb.supply"
   image_path: "./assets/images/sponsors/keeb-supply.png"
   box_background: "cyan-green"
 - name: ioki
+  website: "https://ioki.com"
   image_path: "./assets/images/sponsors/ioki.png"
   box_background: "pink-purple"

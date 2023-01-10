@@ -181,9 +181,9 @@ image: "assets/images/twitter_card.jpg"
     <div class="col-lg-9">
       <div class="sponsor-img flex-wrap">
         {% for sponsor in site.data.sponsors %}
-        <div class="sponsor-img-wrapper drac-box drac-bg-{{sponsor.box_background}} drac-rounded-lg me-3 mb-3 p-2 p-lg-4">
-            <img alt="{{sponsor.name}}" src="{{sponsor.image_path}}" />
-        </div>
+        <a href="{{sponsor.website}}" class="sponsor-img-wrapper drac-box drac-bg-{{sponsor.box_background}} drac-rounded-lg me-3 mb-3 p-2 p-lg-4">
+          <img alt="{{sponsor.name}}" src="{{sponsor.image_path}}" />
+        </a>
         {% endfor %}
       </ul>
     </div>
@@ -230,6 +230,14 @@ image: "assets/images/twitter_card.jpg"
             </td>
             <td class="drac-text drac-text-white" style="max-width: 200px">
               Talks on Stage
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              18:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Raffle
             </td>
           </tr>
           <tr>
