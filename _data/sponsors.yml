@@ -58,6 +58,10 @@
   website: "https://mykeyboard.eu"
   image_path: "./assets/images/sponsors/mykeyboard.png"
   box_background: "pure-white"
+- name: skypad
+  website: "https://skypad.gg"
+  image_path: "./assets/images/sponsors/skypad.jpg"
+  box_background: "pure-black"
 - name: ioki
   website: "https://ioki.com"
   image_path: "./assets/images/sponsors/ioki.png"
