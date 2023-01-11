@@ -1,7 +1,7 @@
 - name: CandyKeys
   website: "https://candykeys.com"
   image_path: "./assets/images/sponsors/candykeys.png"
-  box_background: "white"
+  box_background: "pure-white"
 - name: GMK
   website: "https://www.gmk-electronic-design.de"
   image_path: "./assets/images/sponsors/gmk.png"
@@ -41,11 +41,23 @@
 - name: keebstuff
   website: "https://keebstuff.com"
   image_path: "./assets/images/sponsors/keebstuff.png"
-  box_background: "white"
+  box_background: "pure-white"
 - name: keebsupply
   website: "https://keeb.supply"
   image_path: "./assets/images/sponsors/keeb-supply.png"
   box_background: "cyan-green"
+- name: Mechanicalkeyboards.com
+  website: "https://mechanicalkeyboards.com"
+  image_path: "./assets/images/sponsors/mechanicalkeyboards_com.jpg"
+  box_background: "pure-white"
+- name: BINEPAD
+  website: "https://www.binepad.com"
+  image_path: "./assets/images/sponsors/binepad.png"
+  box_background: "yellow-pink"
+- name: mykeyboard
+  website: "https://mykeyboard.eu"
+  image_path: "./assets/images/sponsors/mykeyboard.png"
+  box_background: "pure-white"
 - name: ioki
   website: "https://ioki.com"
   image_path: "./assets/images/sponsors/ioki.png"
