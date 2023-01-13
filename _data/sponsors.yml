@@ -62,6 +62,30 @@
   website: "https://skypad.gg"
   image_path: "./assets/images/sponsors/skypad.jpg"
   box_background: "pure-black"
+- name: Momoka
+  website: "https://www.momoka.co"
+  image_path: "./assets/images/sponsors/momoka.png"
+  box_background: "pure-white"
+- name: Ducky
+  website: "https://www.caseking.de/marken/ducky"
+  image_path: "./assets/images/sponsors/ducky.png"
+  box_background: "yellow-pink"
+- name: Ultimate Hacking Keyboard
+  website: "https://ultimatehackingkeyboard.com/"
+  image_path: "./assets/images/sponsors/uhk.png"
+  box_background: "pure-white"
+- name: Caseking
+  website: "https://www.caseking.de"
+  image_path: "./assets/images/sponsors/caseking.png"
+  box_background: "cyan-green"
+- name: SplitKB
+  website: "https://splitkb.com"
+  image_path: "./assets/images/sponsors/splitkb.png"
+  box_background: "purple-cyan"
+- name: glorious
+  website: "https://www.gloriousgaming.com"
+  image_path: "./assets/images/sponsors/glorious.png"
+  box_background: "pure-black"
 - name: ioki
   website: "https://ioki.com"
   image_path: "./assets/images/sponsors/ioki.png"
