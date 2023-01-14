@@ -66,16 +66,16 @@
   website: "https://www.momoka.co"
   image_path: "./assets/images/sponsors/momoka.png"
   box_background: "pure-white"
-- name: Ducky
-  website: "https://www.caseking.de/marken/ducky"
-  image_path: "./assets/images/sponsors/ducky.png"
-  box_background: "yellow-pink"
 - name: Ultimate Hacking Keyboard
   website: "https://ultimatehackingkeyboard.com/"
   image_path: "./assets/images/sponsors/uhk.png"
+  box_background: "uhk"
+- name: Ducky
+  website: "https://www.caseking.de/marken/ducky?utm_source=event&utm_medium=partnership&utm_campaign=mechanicon2023"
+  image_path: "./assets/images/sponsors/ducky_new.png"
   box_background: "pure-white"
 - name: Caseking
-  website: "https://www.caseking.de"
+  website: "https://www.caseking.de/peripherie/eingabegeraete/custom-keyboards?utm_source=event&utm_medium=partnership&utm_campaign=mechanicon2023"
   image_path: "./assets/images/sponsors/caseking.png"
   box_background: "cyan-green"
 - name: SplitKB
@@ -83,9 +83,17 @@
   image_path: "./assets/images/sponsors/splitkb.png"
   box_background: "purple-cyan"
 - name: glorious
-  website: "https://www.gloriousgaming.com"
+  website: "https://www.caseking.de/marken/glorious?utm_source=event&utm_medium=partnership&utm_campaign=mechanicon2023"
   image_path: "./assets/images/sponsors/glorious.png"
   box_background: "pure-black"
+- name: Drop
+  website: "https://drop.com/home"
+  image_path: "./assets/images/sponsors/drop.png"
+  box_background: "purple-cyan"
+- name: Vortex
+  website: "https://vortexgear.store"
+  image_path: "./assets/images/sponsors/vortex.png"
+  box_background: "yellow-pink"
 - name: ioki
   website: "https://ioki.com"
   image_path: "./assets/images/sponsors/ioki.png"
