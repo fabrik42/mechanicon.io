@@ -94,6 +94,10 @@
   website: "https://vortexgear.store"
   image_path: "./assets/images/sponsors/vortex.png"
   box_background: "yellow-pink"
+- name: Rabauken
+  website: "https://instagram.com/rabauken_official?igshid=YmMyMTA2M2Y="
+  image_path: "./assets/images/sponsors/rabauken.png"
+  box_background: "cyan-green"
 - name: ioki
   website: "https://ioki.com"
   image_path: "./assets/images/sponsors/ioki.png"
