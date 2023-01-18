@@ -72,7 +72,7 @@
   box_background: "uhk"
 - name: Ducky
   website: "https://www.caseking.de/marken/ducky?utm_source=event&utm_medium=partnership&utm_campaign=mechanicon2023"
-  image_path: "./assets/images/sponsors/ducky_new.png"
+  image_path: "./assets/images/sponsors/ducky.png"
   box_background: "pure-white"
 - name: Caseking
   website: "https://www.caseking.de/peripherie/eingabegeraete/custom-keyboards?utm_source=event&utm_medium=partnership&utm_campaign=mechanicon2023"
@@ -98,6 +98,10 @@
   website: "https://instagram.com/rabauken_official?igshid=YmMyMTA2M2Y="
   image_path: "./assets/images/sponsors/rabauken.png"
   box_background: "cyan-green"
+- name: Deutsche Bahn
+  website: "https://www.dbsystel.de/dbsystel"
+  image_path: "./assets/images/sponsors/db.png"
+  box_background: "pure-white"
 - name: ioki
   website: "https://ioki.com"
   image_path: "./assets/images/sponsors/ioki.png"
