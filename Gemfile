@@ -17,6 +17,7 @@ gem "jekyll", "~> 4.3.1"
 group :jekyll_plugins do
   gem 'jekyll-favicon', '~> 1.1.0'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
