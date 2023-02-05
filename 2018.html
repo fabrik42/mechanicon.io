@@ -1,0 +1,63 @@
+---
+title:  "Mechanicon"
+description: "2018 in Frankfurt am Main - Europe's biggest Mechanical Keyboard Meetup!"
+layout: default
+image: "assets/images/twitter_card.jpg"
+---
+
+<div class="container">
+  <div class="row mt-4 mb-5">
+    <div class="col-sm-3 mb-4 mb-md-0">
+      <a href="/">
+        <img src="./assets/images/logo_white.svg" class="img-fluid" alt="Welcome to Mechanicon" />
+      </a>
+    </div>
+
+    <div class="col-sm-9">
+    </div>
+  </div>
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+    </div>
+    <div class="col-lg-9">
+      {% include history_navigation.html year=2018 %}
+    </div>
+  </div>
+
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Mechanicon 2018
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <p class="drac-text drac-line-height drac-text-white">
+        Some impressions of Mechanicon 2018
+      </p>
+
+      <ul class="drac-list drac-list-unordered drac-list-cyan">
+        {% for link in site.data.history.year_2018 %}
+        <li class="drac-text drac-text-white">
+          <a href="{{link.url}}" class="drac-anchor drac-text drac-text-white drac-text-pink--hover">
+            {{link.title}}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <p class="drac-text drac-text-bold drac-line-height drac-text-cyan mt-5">
+        Thank you all! We hope to see you again!<span id="blinking-cursor">_</span>
+      </p>
+
+      <div style="border-style: solid; border-width: 1px;" class="drac-box drac-border-cyan drac-d-inline-block drac-rounded-lg drac-p-xs mb-4">
+        <a class="drac-anchor drac-text drac-text-cyan drac-text-white--hover" href="https://www.meetup.com/de-DE/mechanical-keyboard-meetup-rhein-main/events/288734786">
+          -> Become part our meetup group to stay up to date! <-
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

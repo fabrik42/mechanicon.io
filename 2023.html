@@ -1,6 +1,6 @@
 ---
-title:  "Mechanicon 2023"
-description: "Mechanicon 2023 took place on January 21st in Frankfurt am Main"
+title:  "Mechanicon"
+description: "January 21st 2023 in Frankfurt am Main - Join us for Europe's biggest Mechanical Keyboard Meetup!"
 layout: default
 image: "assets/images/twitter_card.jpg"
 ---
@@ -8,7 +8,9 @@ image: "assets/images/twitter_card.jpg"
 <div class="container">
   <div class="row mt-4 mb-5">
     <div class="col-sm-3 mb-4 mb-md-0">
-      <img src="./assets/images/logo_white.svg" class="img-fluid" alt="Welcome to Mechanicon" />
+      <a href="/">
+        <img src="./assets/images/logo_white.svg" class="img-fluid" alt="Welcome to Mechanicon" />
+      </a>
     </div>
 
     <div class="col-sm-9">
@@ -17,7 +19,16 @@ image: "assets/images/twitter_card.jpg"
 
   <div class="row mt-2 mb-4">
     <div class="col-lg-3 mb-4">
-      <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
+    </div>
+    <div class="col-lg-9">
+      {% include history_navigation.html year=2023 %}
+    </div>
+  </div>
+
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-pink-purple drac-p-sm">
         <h2 class="drac-heading drac-heading-xl drac-text-black">
           Mechanicon 2023
         </h2>
@@ -29,8 +40,6 @@ image: "assets/images/twitter_card.jpg"
       </p>
 
       <ul class="drac-list drac-list-unordered drac-list-cyan">
-
-
         {% for link in site.data.history.year_2023 %}
         <li class="drac-text drac-text-white">
           <a href="{{link.url}}" class="drac-anchor drac-text drac-text-white drac-text-pink--hover">
@@ -49,6 +58,90 @@ image: "assets/images/twitter_card.jpg"
           -> Become part our meetup group to stay up to date! <-
         </a>
       </div>
+    </div>
+  </div>
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-purple-cyan drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Sponsors
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <div class="sponsor-img flex-wrap">
+        {% for sponsor in site.data.sponsors %}
+        <a href="{{sponsor.website}}" class="sponsor-img-wrapper drac-box drac-bg-{{sponsor.box_background}} drac-rounded-lg me-3 mb-3 p-2 p-lg-4">
+          <img alt="{{sponsor.name}}" src="{{sponsor.image_path}}" />
+        </a>
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Schedule
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <table class="drac-table">
+        <tbody>
+          <tr>
+            <td class="drac-text drac-text-white">
+              14:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Open Doors
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              15:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Official Start
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              15:00-18:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Keyboard exhibition
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              16:00-17:30
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Talks on Stage
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              18:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Raffle
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              19:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Official Ending
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
