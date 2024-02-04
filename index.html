@@ -1,16 +1,17 @@
 ---
 title:  "Mechanicon"
-description: "January 21st 2023 in Frankfurt am Main - Join us for Europe's biggest Mechanical Keyboard Meetup!"
+description: "June 22nd 2024 in Frankfurt am Main - Join us for Europe's biggest Mechanical Keyboard Meetup!"
 layout: default
 image: "assets/images/twitter_card.jpg"
 ---
 
-<div class="container-fluid drac-box drac-bg-pink-purple drac-p-sm">
+<div class="container-fluid drac-box drac-bg-pink-purple drac-p-sm top-banner">
   <div class="container">
   <div class="row my-1">
     <div class="col">
       <h2 class="drac-heading drac-heading-l drac-text-black">
-        Thank you all for coming! We hope to see you again!<span id="blinking-cursor">_</span>
+        We are back!
+        <a href="/">SIGN UP HERE FOR THE 2024 EVENT!</a><span id="blinking-cursor">_</span>
       </h2>
     </div>
   </div>
@@ -28,6 +29,11 @@ image: "assets/images/twitter_card.jpg"
     <div class="col-sm-9">
       <h2 class="drac-heading drac-heading-xl drac-text-white drac-text-yellow-pink text-end">
         Europe's biggest Mechanical Keyboard Meetup!
+        <br/>
+        <br/>
+        June 22nd 2024
+        <br/>
+        Frankfurt am Main
       </h2>
     </div>
   </div>
@@ -36,37 +42,36 @@ image: "assets/images/twitter_card.jpg"
     <div class="col-lg-3 mb-4">
       <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
         <h2 class="drac-heading drac-heading-xl drac-text-black">
-          History
+          Registration
         </h2>
       </div>
     </div>
     <div class="col-lg-9">
       <p class="drac-text drac-line-height drac-text-white">
-        Learn about Mechanicon's in the past. Checkout these links to get an idea how it was like :)
-      </p>
-
-      {% include history_navigation.html %}
-    </div>
-  </div>
-
-  <div class="row mt-2 mb-4">
-    <div class="col-lg-3 mb-4">
-      <div class="drac-box drac-card drac-bg-yellow-pink drac-p-sm">
-        <h2 class="drac-heading drac-heading-xl drac-text-black">
-          Stay up to date!
-        </h2>
-      </div>
-    </div>
-    <div class="col-lg-9">
-      <p class="drac-text drac-line-height drac-text-white">
-        Our events get published on our meetup.com group.
+        Registration for the event takes place on our meetup page.
       </p>
 
       <div style="border-style: solid; border-width: 1px;" class="drac-box drac-border-cyan drac-d-inline-block drac-rounded-lg drac-p-xs mb-4">
-        <a class="drac-anchor drac-text drac-text-cyan drac-text-white--hover" href="https://www.meetup.com/de-DE/mechanical-keyboard-meetup-rhein-main/">
-          -> Join us to be notified about future events! <-
+        <a class="drac-anchor drac-text drac-text-cyan drac-text-white--hover" href="https://www.meetup.com/de-DE/mechanical-keyboard-meetup-rhein-main/events/288734786">
+          -> Please RVSP here for the 2024 meetup event! <-
         </a>
       </div>
+
+      <p class="drac-text drac-line-height drac-text-white">
+        It's very helpful for us organizers that you RSVP on meetup, because:
+      </p>
+
+      <ul class="drac-list drac-list-unordered drac-list-cyan">
+        <li class="drac-text drac-text-white">
+          We can reach you in case something happens on short notice
+        </li>
+        <li class="drac-text drac-text-white">
+          We know how many people to expect and plan accordingly
+        </li>
+        <li class="drac-text drac-text-white">
+          We can prepare name tags, etc..
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -101,10 +106,6 @@ image: "assets/images/twitter_card.jpg"
 
       <p class="drac-text drac-line-height drac-text-white">
         We never did any advertisement outside of community forums.
-      </p>
-
-      <p class="drac-text drac-line-height drac-text-white">
-        We had to cancel the 2019/2020 edition due to the lockdown, but we were excited to reopen and invite everyone in 2023!
       </p>
 
       <h3 class="drac-heading drac-heading-sm drac-text-pink-purple">
@@ -149,7 +150,61 @@ image: "assets/images/twitter_card.jpg"
 
   <div class="row mt-2 mb-4">
     <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-purple-cyan drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Sponsors
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <div class="sponsor-img flex-wrap">
+        {% for sponsor in site.data.sponsors %}
+        <a href="{{sponsor.website}}" class="sponsor-img-wrapper drac-box drac-bg-{{sponsor.box_background}} drac-rounded-lg me-3 mb-3 p-2 p-lg-4">
+          <img alt="{{sponsor.name}}" src="{{sponsor.image_path}}" />
+        </a>
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
       <div class="drac-box drac-card drac-bg-yellow-pink drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Schedule
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <p class="drac-text drac-line-height drac-text-white">
+        Mechanicon 2024 will take place during the day, on Saturday, June 22nd in Frankfurt/Main.
+        <br/>
+        We will release
+      </p>
+    </div>
+  </div>
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          History
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <p class="drac-text drac-line-height drac-text-white">
+        Learn about events in the past. Checkout these links to get an idea how it was like :)
+      </p>
+
+      {% include history_navigation.html %}
+    </div>
+  </div>
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-pink-purple drac-p-sm">
         <h2 class="drac-heading drac-heading-xl drac-text-black">
           FAQ
         </h2>
@@ -229,4 +284,26 @@ image: "assets/images/twitter_card.jpg"
       </p>
     </div>
   </div>
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-yellow-pink drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Stay up to date!
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <p class="drac-text drac-line-height drac-text-white">
+        Our events get published on our meetup.com group.
+      </p>
+
+      <div style="border-style: solid; border-width: 1px;" class="drac-box drac-border-cyan drac-d-inline-block drac-rounded-lg drac-p-xs mb-4">
+        <a class="drac-anchor drac-text drac-text-cyan drac-text-white--hover" href="https://www.meetup.com/de-DE/mechanical-keyboard-meetup-rhein-main/">
+          -> Join us to be notified about future events! <-
+        </a>
+      </div>
+    </div>
+  </div>
+
 </div>
