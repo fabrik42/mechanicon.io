@@ -159,7 +159,7 @@ image: "assets/images/twitter_card.jpg"
     <div class="col-lg-9">
       <div class="sponsor-img flex-wrap">
         {% for sponsor in site.data.sponsors %}
-        <a href="{{sponsor.website}}" class="sponsor-img-wrapper drac-box drac-bg-{{sponsor.box_background}} drac-rounded-lg me-3 mb-3 p-2 p-lg-4">
+        <a href="{{sponsor.website}}" title="{{sponsor.name}}" class="sponsor-img-wrapper drac-box drac-bg-{{sponsor.box_background}} drac-rounded-lg me-3 mb-3 p-2 p-lg-4">
           <img alt="{{sponsor.name}}" src="{{sponsor.image_path}}" />
         </a>
         {% endfor %}
