@@ -50,7 +50,7 @@
   website: "https://monacokeys.de"
   image_path: "./assets/images/sponsors/monacokeys.png"
   box_background: "pink-purple"
-- name: Clacktales
+- name: VTX Engine
   website: "javascript:void(0);"
-  image_path: "./assets/images/sponsors/clacktales.png"
-  box_background: "purple-cyan"
+  image_path: "./assets/images/sponsors/vtx.png"
+  box_background: "pure-grey"
