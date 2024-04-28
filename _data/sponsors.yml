@@ -10,6 +10,10 @@
   website: "https://keygem.com"
   image_path: "./assets/images/sponsors/keygem.png"
   box_background: "yellow-pink"
+- name: Click! Clack! Hack!
+  website: "https://www.clickclackhack.de"
+  image_path: "./assets/images/sponsors/clickclackhack.png"
+  box_background: "pink-purple"
 - name: keebsupply
   website: "https://keeb.supply"
   image_path: "./assets/images/sponsors/keeb-supply.png"
@@ -18,10 +22,6 @@
   website: "https://42keebs.eu"
   image_path: "./assets/images/sponsors/42keebs.png"
   box_background: "42-keebs"
-- name: Rabauken
-  website: "https://instagram.com/rabauken_official?igshid=YmMyMTA2M2Y="
-  image_path: "./assets/images/sponsors/rabauken.png"
-  box_background: "cyan-green"
 - name: Oblotzky
   website: "https://oblotzky.industries"
   image_path: "./assets/images/sponsors/oblotzky_industries_logo.png"
@@ -30,6 +30,10 @@
   website: "https://splitkb.com"
   image_path: "./assets/images/sponsors/splitkb.png"
   box_background: "purple-cyan"
+- name: Rabauken
+  website: "https://instagram.com/rabauken_official?igshid=YmMyMTA2M2Y="
+  image_path: "./assets/images/sponsors/rabauken.png"
+  box_background: "cyan-green"
 - name: Wooting
   website: "https://wooting.io"
   image_path: "./assets/images/sponsors/wooting.png"
