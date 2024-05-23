@@ -6,6 +6,10 @@
   website: "https://www.gmk-electronic-design.de"
   image_path: "./assets/images/sponsors/gmk.png"
   box_background: "pink-purple"
+- name: Cherry
+  website: "https://www.cherrymx.de"
+  image_path: "./assets/images/sponsors/cherry.png"
+  box_background: "pure-white"
 - name: Keygem
   website: "https://keygem.com"
   image_path: "./assets/images/sponsors/keygem.png"
@@ -30,14 +34,18 @@
   website: "https://splitkb.com"
   image_path: "./assets/images/sponsors/splitkb.png"
   box_background: "purple-cyan"
-- name: Rabauken
-  website: "https://instagram.com/rabauken_official?igshid=YmMyMTA2M2Y="
-  image_path: "./assets/images/sponsors/rabauken.png"
-  box_background: "cyan-green"
+- name: waifuworks
+  website: "https://linktr.ee/waifuworks"
+  image_path: "./assets/images/sponsors/waifuworks.png"
+  box_background: "pure-white"
 - name: Wooting
   website: "https://wooting.io"
   image_path: "./assets/images/sponsors/wooting.png"
   box_background: "yellow-pink"
+- name: Rabauken
+  website: "https://instagram.com/rabauken_official?igshid=YmMyMTA2M2Y="
+  image_path: "./assets/images/sponsors/rabauken.png"
+  box_background: "cyan-green"
 - name: Sharkoon
   website: "https://de.sharkoon.com"
   image_path: "./assets/images/sponsors/sharkoon.png"
@@ -50,11 +58,23 @@
   website: "https://akkogear.de"
   image_path: "./assets/images/sponsors/akko.png"
   box_background: "pure-white"
-- name: MonacoKeys
-  website: "https://monacokeys.de"
-  image_path: "./assets/images/sponsors/monacokeys.png"
-  box_background: "pink-purple"
+- name: Salvun
+  website: "https://salvun.com"
+  image_path: "./assets/images/sponsors/salvun.png"
+  box_background: "pure-white"
 - name: VTX Engine
   website: "javascript:void(0);"
   image_path: "./assets/images/sponsors/vtx.png"
   box_background: "pure-grey"
+- name: MonacoKeys
+  website: "https://monacokeys.de"
+  image_path: "./assets/images/sponsors/monacokeys.png"
+  box_background: "pink-purple"
+- name: Keebwerk
+  website: "https://www.keebwerk.com"
+  image_path: "./assets/images/sponsors/keebwerk.png"
+  box_background: "cyan-green"
+- name: Cerakey
+  website: "https://www.cerakey.com"
+  image_path: "./assets/images/sponsors/cerakey.png"
+  box_background: "pure-white"
