@@ -38,7 +38,7 @@ image: "assets/images/twitter_card.jpg"
     </div>
   </div>
 
-  <div class="row mt-2 mb-4">
+  <div id="registration" class="row mt-2 mb-4">
     <div class="col-lg-3 mb-4">
       <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
         <h2 class="drac-heading drac-heading-xl drac-text-black">
@@ -75,7 +75,7 @@ image: "assets/images/twitter_card.jpg"
     </div>
   </div>
 
-  <div class="row mt-2 mb-4">
+  <div id="about" class="row mt-2 mb-4">
     <div class="col-lg-3 mb-4">
       <div class="drac-box drac-card drac-bg-pink-purple drac-p-sm">
         <h2 class="drac-heading drac-heading-xl drac-text-black">
@@ -148,7 +148,7 @@ image: "assets/images/twitter_card.jpg"
     </div>
   </div>
 
-  <div class="row mt-2 mb-4">
+  <div id="sponsors" class="row mt-2 mb-4">
     <div class="col-lg-3 mb-4">
       <div class="drac-box drac-card drac-bg-purple-cyan drac-p-sm">
         <h2 class="drac-heading drac-heading-xl drac-text-black">
@@ -168,7 +168,7 @@ image: "assets/images/twitter_card.jpg"
     </div>
   </div>
 
-  <div class="row mt-2 mb-4">
+  <div id="schedule" class="row mt-2 mb-4">
     <div class="col-lg-3 mb-4">
       <div class="drac-box drac-card drac-bg-yellow-pink drac-p-sm">
         <h2 class="drac-heading drac-heading-xl drac-text-black">
@@ -177,11 +177,50 @@ image: "assets/images/twitter_card.jpg"
       </div>
     </div>
     <div class="col-lg-9">
-      <p class="drac-text drac-line-height drac-text-white">
-        Mechanicon 2024 will take place during the day, on Saturday, June 22nd in Frankfurt/Main.
-        <br/>
-        We will release a more detailled schedule soon! Please subscribe to our event on Meetup.com to stay up to date!
-      </p>
+      <table class="drac-table">
+        <tbody>
+          <tr>
+            <td class="drac-text drac-text-white">
+              11:30
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Open Doors
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              12:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Official Start
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              12:00 – 17:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Keyboard exhibition
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              16:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Raffle (incl. official Goodbye afterwards)
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              17:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Official Ending
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
@@ -202,7 +241,7 @@ image: "assets/images/twitter_card.jpg"
     </div>
   </div>
 
-  <div class="row mt-2 mb-4">
+  <div id="faq" class="row mt-2 mb-4">
     <div class="col-lg-3 mb-4">
       <div class="drac-box drac-card drac-bg-pink-purple drac-p-sm">
         <h2 class="drac-heading drac-heading-xl drac-text-black">
@@ -211,6 +250,16 @@ image: "assets/images/twitter_card.jpg"
       </div>
     </div>
     <div class="col-lg-9">
+      <p class="drac-text drac-line-height drac-text-white">
+        <span class="drac-text drac-line-height drac-text-yellow">
+          How do I get to the venue?
+        </span>
+        <br/>
+        -> We recommend that you get there by <a href="https://maps.app.goo.gl/7xaXPmnKkiMLTwRp9" class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover">public transport</a>. There is a <a href="https://maps.app.goo.gl/7xaXPmnKkiMLTwRp9" class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover">subway station</a> very close to the venue. You can take the U4 from the main train station to get there.
+        <br/>
+        -> If you need to come by car, there is a <a href="https://maps.app.goo.gl/hHJ62fo5YWbzkSiA6" class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover">parking garage</a> in the same building as the venue (approach it by the Arnsburger Strasse). It is publicly accessible and space is limited. Do NOT try to park in the backyard of the venue. This not allowed and will get you towed!
+      </p>
+
       <p class="drac-text drac-line-height drac-text-white">
         <span class="drac-text drac-line-height drac-text-yellow">
           Can I bring my keyboards?
@@ -240,7 +289,7 @@ image: "assets/images/twitter_card.jpg"
           I want to bring a lot of keyboards and I need some time to set it up properly.
         </span>
         <br/>
-        -> You can come up to an hour earlier, doors are open from 14:00.
+        -> You can come up to 30 minutes earlier, doors are open from 11:30.
       </p>
 
       <p class="drac-text drac-line-height drac-text-white">
@@ -263,7 +312,7 @@ image: "assets/images/twitter_card.jpg"
 
       <p class="drac-text drac-line-height drac-text-white">
         <span class="drac-text drac-line-height drac-text-yellow">
-          Where should I go if I get thirsty or hungry?
+          Where should I go if I get hungry?
         </span>
         <br/>
         -> Don't worry! The location 2024 is in Bornheim, a popular district of Frankfurt am Main. The heart of Bornheim is the <a href="https://maps.app.goo.gl/7YAmMtd1HnDC6SzP6" class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover" >Berger Strasse</a> - with a variety of dining options including restaurants, cafés, fast food outlets, and supermarkets. Whether you stroll up or down the street, you're sure to find something to your taste!</p>
