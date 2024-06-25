@@ -16,7 +16,7 @@
   box_background: "42-keebs"
 - name: Eloquentkeys
   website: "https://www.eloquentclicks.com"
-  image_path: "./assets/images/sponsors/eloquentclicks.jpg"
+  image_path: "./assets/images/sponsors/eloquentclicks.png"
   box_background: "pure-white"
 - name: Keebwerk
   website: "https://www.keebwerk.com"
