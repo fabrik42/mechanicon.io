@@ -57,10 +57,86 @@ image: "assets/images/twitter_card.jpg"
       </p>
 
       <div style="border-style: solid; border-width: 1px;" class="drac-box drac-border-cyan drac-d-inline-block drac-rounded-lg drac-p-xs mb-4">
-        <a class="drac-anchor drac-text drac-text-cyan drac-text-white--hover" href="https://www.meetup.com/de-DE/mechanical-keyboard-meetup-rhein-main/events/288734786">
+        <a class="drac-anchor drac-text drac-text-cyan drac-text-white--hover" href="{{site.event_url}}">
           -> Become part our meetup group to stay up to date! <-
         </a>
       </div>
+    </div>
+  </div>
+
+  <div id="sponsors" class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-purple-cyan drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Sponsors
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <div class="sponsor-img flex-wrap">
+        {% for sponsor in site.data.sponsors %}
+        <a href="{{sponsor.website}}" title="{{sponsor.name}}" class="sponsor-img-wrapper drac-box drac-bg-{{sponsor.box_background}} drac-rounded-lg me-3 mb-3 p-2 p-lg-4">
+          <img alt="{{sponsor.name}}" src="{{sponsor.image_path}}" />
+        </a>
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="schedule" class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-yellow-pink drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Schedule 2024
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <table class="drac-table">
+        <tbody>
+          <tr>
+            <td class="drac-text drac-text-white">
+              11:30
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Open Doors
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              12:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Official Start
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              12:00 – 17:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Keyboard exhibition
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              16:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Raffle (incl. official Goodbye afterwards)
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              17:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Official Ending
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

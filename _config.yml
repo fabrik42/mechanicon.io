@@ -27,6 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mechanicon.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mechanicon
 github_username:  fabrik42
+event_url: "https://www.meetup.com/de-DE/mechanical-keyboard-meetup-rhein-main/events/303294249"
 
 author:
   twitter: mechanicon
