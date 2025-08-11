@@ -135,6 +135,26 @@ image: "assets/images/twitter_card.jpg"
     </div>
   </div>
 
+  <div id="sponsors" class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-purple-cyan drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Sponsors
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <div class="sponsor-img flex-wrap">
+        {% for sponsor in site.data.sponsors %}
+        <a href="{{sponsor.website}}" title="{{sponsor.name}}" class="sponsor-img-wrapper drac-box drac-bg-{{sponsor.box_background}} drac-rounded-lg me-3 mb-3 p-2 p-lg-4">
+          <img alt="{{sponsor.name}}" src="{{sponsor.image_path}}" />
+        </a>
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </div>
+
   <div class="row mt-2 mb-4">
     <div class="col-lg-3 mb-4">
       <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
@@ -165,6 +185,8 @@ image: "assets/images/twitter_card.jpg"
         <span class="drac-text drac-line-height drac-text-yellow">
           How do I get to the venue?
         </span>
+        <br/>
+        -> The official address of the venue is: Saalbau Bornheim, Arnsburger Str. 24, 60385 Frankfurt am Main
         <br/>
         -> We recommend that you get there by <a href="https://maps.app.goo.gl/7xaXPmnKkiMLTwRp9" class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover">public transport</a>. There is a <a href="https://maps.app.goo.gl/7xaXPmnKkiMLTwRp9" class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover">subway station</a> very close to the venue. You can take the U4 from the main train station to get there.
         <br/>
