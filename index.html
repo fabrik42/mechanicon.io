@@ -29,34 +29,42 @@ image: "assets/images/twitter_card.jpg"
     <div class="col-lg-3 mb-4">
       <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
         <h2 class="drac-heading drac-heading-xl drac-text-black">
-          Registration
+          Tickets
         </h2>
       </div>
     </div>
     <div class="col-lg-9">
       <p class="drac-text drac-line-height drac-text-white">
-        Registration for the event takes place on our meetup page.
+        To attend the event you need to get a <span class="drac-text-pink">free</span> ticket!
       </p>
 
-      <div style="border-style: solid; border-width: 1px;" class="drac-box drac-border-cyan drac-d-inline-block drac-rounded-lg drac-p-xs mb-4">
-        <a class="drac-anchor drac-text drac-text-cyan drac-text-white--hover" href="{{site.event_url}}">
-          -> Please RVSP here for the 2025 meetup event! <-
-        </a>
+      <div id="ticket-button-wrapper" style="border-style: solid; border-width: 1px;" class="drac-box drac-border-cyan drac-d-inline-block drac-rounded-lg drac-p-xs mb-4">
+        <tito-button
+          event="mechanicon/mechanicon-2025"
+        >
+          -> Get your free ticket for the 2025 event! <-
+        </tito-button>
       </div>
 
+
       <p class="drac-text drac-line-height drac-text-white">
-        It's very helpful for us organizers that you RSVP on meetup, because:
+        Get your ticket
+        <span class="drac-text-pink">today</span>
+        and become part of the Mechanicon community event!
       </p>
 
       <ul class="drac-list drac-list-unordered drac-list-cyan">
         <li class="drac-text drac-text-white">
-          We can reach you in case something happens on short notice
+          A huuuge keyboard exhibition - please, bring your own! &lt;3
         </li>
         <li class="drac-text drac-text-white">
-          We know how many people to expect and plan accordingly
+          Many sponsors will have a booth and want to talk to you!
         </li>
         <li class="drac-text drac-text-white">
-          We can prepare name tags, etc..
+          New: A dedicated room for talks and workshops!
+        </li>
+        <li class="drac-text drac-text-white">
+          And of course: A big raffle with awesome prices!
         </li>
       </ul>
     </div>
@@ -136,9 +144,8 @@ image: "assets/images/twitter_card.jpg"
       <p class="drac-text drac-line-height drac-text-white">
         And with all that being said... see for yourself and catch the Mechanicon vibe of 2024!
       </p>
-      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
-        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/y5cq5ejbsJ8?controls=1&modestbranding=1&rel=0&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
+
+      {% include youtube_video.html video_id="y5cq5ejbsJ8" %}
 
       <p class="drac-text drac-line-height drac-text-white">
         Credit for this great video goes to
@@ -179,6 +186,13 @@ image: "assets/images/twitter_card.jpg"
     </div>
     <div class="col-lg-9">
       <table class="drac-table">
+        <thead>
+          <tr>
+            <th class="drac-text drac-bg-orange drac-text-black drac-table-header" colspan="2">
+              Main Stage / Exhibition
+            </th>
+          </tk>
+        </thead>
         <tbody>
           <tr>
             <td class="drac-text drac-text-white">
@@ -218,6 +232,66 @@ image: "assets/images/twitter_card.jpg"
             </td>
             <td class="drac-text drac-text-white" style="max-width: 200px">
               Official Ending
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="drac-table drac-my-lg">
+        <thead>
+          <tr>
+            <th class="drac-text drac-bg-pink drac-text-black drac-table-header" colspan="2">
+             Talks - Upstairs @ GMK Room
+            </th>
+          </tk>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="drac-text drac-text-white">
+              13:00 - 14:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Workshop From Layout to PCB – A Quick Guide
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              14:20 - 14:35
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              ThinkPad input devices and their influence on mechanical keyboards
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              14:40 - 14:55
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              mnhTTn - flat but klonk
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              15:00 - 16:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Talk by GMK
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              16:05 - 16:20
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Tastaturen - Ein Drama mit 10 Finger (15min Edition)
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              16:25 - 16:40
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Ergonomische Split Keyboards von A-Z - Entwicklung eines eigenen Keyboards
             </td>
           </tr>
         </tbody>
@@ -334,7 +408,7 @@ image: "assets/images/twitter_card.jpg"
           I have even more questions!
         </span>
         <br/>
-        -> We are happy to help! RSVP on meetup and send the organizers a message:
+        -> We are happy to help! Just send the organizers a message:
         <a href="mailto:hello@mechanicon.io" class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover">hello@mechanicon.io</a>.
       </p>
 
@@ -353,16 +427,7 @@ image: "assets/images/twitter_card.jpg"
       </div>
     </div>
     <div class="col-lg-9">
-      <p class="drac-text drac-line-height drac-text-white">
-        Our events get published on our meetup.com group.
-      </p>
-
-      <div style="border-style: solid; border-width: 1px;" class="drac-box drac-border-cyan drac-d-inline-block drac-rounded-lg drac-p-xs mb-4">
-        <a class="drac-anchor drac-text drac-text-cyan drac-text-white--hover" href="{{site.event_url}}">
-          -> Join us to be notified about future events! <-
-        </a>
-      </div>
+      {% include stay_up_to_date.html %}
     </div>
   </div>
-
 </div>

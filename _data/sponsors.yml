@@ -26,18 +26,18 @@
   website: "https://khor.store"
   image_path: "./assets/images/sponsors/khor.png"
   box_background: "pink-purple"
-- name: VTX Engine
-  website: "javascript:void(0);"
-  image_path: "./assets/images/sponsors/vtx.png"
-  box_background: "pure-grey"
-- name: MonacoKeys
-  website: "https://monacokeys.de"
-  image_path: "./assets/images/sponsors/monacokeys.png"
-  box_background: "pink-purple"
 - name: Cerakey
   website: "https://www.cerakey.com"
   image_path: "./assets/images/sponsors/cerakey.png"
   box_background: "pure-white"
+- name: MonacoKeys
+  website: "https://monacokeys.de"
+  image_path: "./assets/images/sponsors/monacokeys.png"
+  box_background: "pink-purple"
+- name: VTX Engine
+  website: "javascript:void(0);"
+  image_path: "./assets/images/sponsors/vtx.png"
+  box_background: "pure-grey"
 - name: BINEPAD
   website: "https://www.binepad.com"
   image_path: "./assets/images/sponsors/binepad.png"
@@ -66,3 +66,7 @@
   website: "https://awekeys.com"
   image_path:  "./assets/images/sponsors/awekeys.png"
   box_background: "pure-white"
+- name: Keycapsule
+  website: "https://keycapsule.shop"
+  image_path:  "./assets/images/sponsors/keycapsule.png"
+  box_background: "yellow-pink"

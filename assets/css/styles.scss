@@ -26,6 +26,13 @@
   background: #d2d2d2;
 }
 
+.drac-table th.drac-table-header {
+  border-color: var(--disabled);
+  border-style: solid;
+  border-width: .1rem;
+  padding: .5rem;
+}
+
 body {
   background: #1d1e26;
   margin: 0;
@@ -67,4 +74,20 @@ body {
 
 .social-icon {
   width: 40px;
+}
+
+tito-button button.tito-widget-button {
+  border: none;
+  font-family: Fira Code,monospace;
+  color: var(--cyan);
+  font-size: var(--font-md);
+  text-decoration: none;
+
+  background: transparent;
+
+  display: inline-block;
+
+  &:hover {
+    color: var(--black);
+  }
 }

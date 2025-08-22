@@ -1,6 +1,6 @@
 ---
-title:  "Mechanicon"
-description: "2024 in Frankfurt am Main - Europe's biggest Mechanical Keyboard Meetup!"
+title:  "Mechanicon 2024"
+description: "This was Mechanicon 2024 in Frankfurt am Main - Europe's biggest Mechanical Keyboard Meetup!"
 layout: default
 image: "assets/images/twitter_card.jpg"
 ---
@@ -48,6 +48,15 @@ image: "assets/images/twitter_card.jpg"
         {% endfor %}
       </ul>
 
+      {% include youtube_video.html video_id="y5cq5ejbsJ8" %}
+
+      <p class="drac-text drac-line-height drac-text-white">
+        Credit for this great video goes to
+        <a href="https://www.instagram.com/kevisuals" class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover">kevisuals</a>
+        aka
+        <a href="https://www.instagram.com/mayne069" class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover">mayne069</a>! <3
+      </p>
+
       <p class="drac-text drac-line-height drac-text-white mt-5">
         If you took some photos/videos and want to add a link there, please let us know!
       </p>
@@ -56,11 +65,7 @@ image: "assets/images/twitter_card.jpg"
         Thank you all! We hope to see you again!<span id="blinking-cursor">_</span>
       </p>
 
-      <div style="border-style: solid; border-width: 1px;" class="drac-box drac-border-cyan drac-d-inline-block drac-rounded-lg drac-p-xs mb-4">
-        <a class="drac-anchor drac-text drac-text-cyan drac-text-white--hover" href="{{site.event_url}}">
-          -> Become part our meetup group to stay up to date! <-
-        </a>
-      </div>
+      {% include stay_up_to_date.html %}
     </div>
   </div>
 
