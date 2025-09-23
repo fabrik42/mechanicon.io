@@ -22,10 +22,18 @@
   website: "https://42keebs.eu"
   image_path: "./assets/images/sponsors/42keebs.png"
   box_background: "42-keebs"
+- name: Keebart
+  website: "https://www.keebart.com/"
+  image_path: "./assets/images/sponsors/keebart.png"
+  box_background: "pure-white"
 - name: Wooting
   website: "https://wooting.io"
   image_path: "./assets/images/sponsors/wooting.png"
   box_background: "yellow-pink"
+- name: Rabauken
+  website: "https://instagram.com/rabauken_official?igshid=YmMyMTA2M2Y="
+  image_path: "./assets/images/sponsors/rabauken.png"
+  box_background: "cyan-green"
 - name: Khor
   website: "https://khor.store"
   image_path: "./assets/images/sponsors/khor.png"
@@ -46,26 +54,18 @@
   website: "https://www.binepad.com"
   image_path: "./assets/images/sponsors/binepad.png"
   box_background: "yellow-pink"
-- name: VTX Engine
-  website: "javascript:void(0);"
-  image_path: "./assets/images/sponsors/vtx.png"
-  box_background: "pure-grey"
-- name: waifuworks
-  website: "https://linktr.ee/waifuworks"
-  image_path: "./assets/images/sponsors/waifuworks.png"
-  box_background: "pure-white"
 - name: Coffeekeys
   website: "https://coffeekeys.eu"
   image_path:  "./assets/images/sponsors/coffeekeys.png"
   box_background: "42-keebs"
-- name: Unikeys
-  website: "https://unikeyboards.com"
-  image_path:  "./assets/images/sponsors/unikeys.png"
+- name: waifuworks
+  website: "https://linktr.ee/waifuworks"
+  image_path: "./assets/images/sponsors/waifuworks.png"
   box_background: "pure-white"
-- name: YUZU
-  website: "https://yuzukeycaps.com/"
-  image_path:  "./assets/images/sponsors/yuzu.jpg"
-  box_background: "yuzu"
+- name: NuPhy
+  website: "https://nuphy.com"
+  image_path:  "./assets/images/sponsors/nuphy.png"
+  box_background: "cyan-green"
 - name: Awekeys
   website: "https://awekeys.com"
   image_path:  "./assets/images/sponsors/awekeys.png"
@@ -74,3 +74,11 @@
   website: "https://keycapsule.shop"
   image_path:  "./assets/images/sponsors/keycapsule.png"
   box_background: "yellow-pink"
+- name: Monkeytype
+  website: "https://monkeytype.com"
+  image_path:  "./assets/images/sponsors/monkeytype.png"
+  box_background: "monkeytype"
+- name: Gateron
+  website: "https://www.gateron.co"
+  image_path:  "./assets/images/sponsors/gateron.jpg"
+  box_background: "pure-white"
