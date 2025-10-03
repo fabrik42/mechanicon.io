@@ -30,10 +30,6 @@
   website: "https://wooting.io"
   image_path: "./assets/images/sponsors/wooting.png"
   box_background: "yellow-pink"
-- name: Rabauken
-  website: "https://instagram.com/rabauken_official?igshid=YmMyMTA2M2Y="
-  image_path: "./assets/images/sponsors/rabauken.png"
-  box_background: "cyan-green"
 - name: Khor
   website: "https://khor.store"
   image_path: "./assets/images/sponsors/khor.png"
@@ -66,10 +62,6 @@
   website: "https://nuphy.com"
   image_path:  "./assets/images/sponsors/nuphy.png"
   box_background: "cyan-green"
-- name: Awekeys
-  website: "https://awekeys.com"
-  image_path:  "./assets/images/sponsors/awekeys.png"
-  box_background: "pure-white"
 - name: Keycapsule
   website: "https://keycapsule.shop"
   image_path:  "./assets/images/sponsors/keycapsule.png"
