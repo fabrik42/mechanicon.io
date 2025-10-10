@@ -74,3 +74,12 @@
   website: "https://www.gateron.co"
   image_path:  "./assets/images/sponsors/gateron.jpg"
   box_background: "pure-white"
+- name: Kamo Keyboards
+  # website: "https://kamo-keyboards.com"
+  website: "javascript:void(0);"
+  image_path:  "./assets/images/sponsors/kamo.png"
+  box_background: "kamo"
+- name: Proto[Typist]
+  website: "https://prototypist.net"
+  image_path:  "./assets/images/sponsors/prototypist.png"
+  box_background: "pink-purple"
