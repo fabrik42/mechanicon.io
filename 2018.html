@@ -4,6 +4,7 @@ description: "This was Mechanicon 2018 in Frankfurt am Main - Europe's biggest M
 layout: default
 image: "assets/images/twitter_card.jpg"
 ---
+{% assign current_year = site.data.history.year_2018 %}
 
 <div class="container">
   <div class="row mt-4 mb-5">
@@ -14,6 +15,16 @@ image: "assets/images/twitter_card.jpg"
     </div>
 
     <div class="col-sm-9">
+      <h2 class="drac-heading drac-heading-xl drac-text-white drac-text-yellow-pink text-end">
+        Archive: {{ page.title }}
+        <br/>
+        <br/>
+        {{ current_year.date | date: "%B %d, %Y" }}
+        <br/>
+        {{ current_year.venue.city }}
+        <br/>
+        @ {{ current_year.venue.name }}
+      </h2>
     </div>
   </div>
 
@@ -40,7 +51,7 @@ image: "assets/images/twitter_card.jpg"
       </p>
 
       <ul class="drac-list drac-list-unordered drac-list-cyan">
-        {% for link in site.data.history.year_2018 %}
+        {% for link in current_year.links %}
         <li class="drac-text drac-text-white">
           <a href="{{link.url}}" class="drac-anchor drac-text drac-text-white drac-text-pink--hover">
             {{link.title}}
