@@ -6,6 +6,28 @@ year_2025:
     city: Frankfurt am Main
     address: Arnsburger Str. 24, Frankfurt am Main
   meetup_rsvps: 181
+  tito_rsvps: 665
+  links:
+    - title: "Click! Clack! Hack! Podcast - Episode 112: Es ist Mechanicon!"
+      url: https://www.clickclackhack.de/112.html
+    - title: Twitch IRL Stream by der_cyberpunk
+      url: https://www.twitch.tv/der_cyberpunk/video/2588975822
+    - title: Mechanicon 2025 Community Showcase by Altaïr Qu Ten - YouTube
+      url: https://www.youtube.com/watch?v=5qQ44i7fk5E
+    - title: Interview mit Michl von ‪@MonacoKeys‬ - YouTube
+      url: https://www.youtube.com/watch?v=uwao8f-tyKI
+    - title: Blog post by draptik
+      url: https://draptik.github.io/posts/2025/10/11/mechanicon-2025/
+    - title: Photo collection by Hrw
+      url: https://photos.app.goo.gl/DSNP783gvnN68vXa8
+    - title: Photo collection by Omegaswitch
+      url: https://collect.wetransfer.com/board/se6irelsacsot67i620251012193132
+    - title: Photo collection by Hamako
+      url: https://postimg.cc/gallery/ZqyNWvG
+    - title: "YouTube Short: MECHANICON Frankfurt 2025 - Keyboards und 3D Druck"
+      url: https://www.youtube.com/shorts/ETo8XV8C6RY
+    - title: Blog post by Hrw
+      url: https://marcin.juszkiewicz.com.pl/2025/10/15/mechanicon-2025/
 year_2024:
   date: 2024-06-22
   cover_image: '/assets/images/history/2024.webp'
@@ -41,9 +63,9 @@ year_2023:
     - title: CCH Ultras Photo Collection
       url: https://www.nerdbude.com/mechanicon2023.html
     - title: "Click! Clack! Hack! Podcast - Episode 56: Das war die Mechanicon..."
-      url: https://www.nerdbude.com/podcast/056.html
+      url: https://www.clickclackhack.de/056.html
     - title: "Click! Clack! Hack! Podcast - Episode 54: Christian Bäuerlein / Mechanicon"
-      url: https://www.nerdbude.com/podcast/054.html
+      url: https://www.clickclackhack.de/054.html
     - title: Photos by Mario (GMK)
       url: https://lightroom.adobe.com/shares/1c49a0b70e6641d4849fc11302051eed
     - title: Photos by Geist#0611 (Clacktales/MKD)

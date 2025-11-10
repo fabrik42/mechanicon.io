@@ -1,0 +1,234 @@
+---
+title:  "Mechanicon 2025"
+description: "This was Mechanicon 2025 in Frankfurt am Main - Europe's biggest Mechanical Keyboard Meetup!"
+layout: default
+image: "assets/images/twitter_card.jpg"
+---
+{% assign current_year = site.data.history.year_2025 %}
+
+<div class="container">
+  <div class="row mt-4 mb-5">
+    <div class="col-sm-3 mb-4 mb-md-0">
+      <a href="/">
+        <img src="./assets/images/logo_white.svg" class="img-fluid" alt="Welcome to Mechanicon" />
+      </a>
+    </div>
+
+    <div class="col-sm-9">
+      <h2 class="drac-heading drac-heading-xl drac-text-white drac-text-yellow-pink text-end">
+        Archive: {{ page.title }}
+        <br/>
+        <br/>
+        {{ current_year.date | date: "%B %d, %Y" }}
+        <br/>
+        {{ current_year.venue.city }}
+        <br/>
+        @ {{ current_year.venue.name }}
+      </h2>
+    </div>
+  </div>
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+    </div>
+    <div class="col-lg-9">
+      {% include history_navigation.html year=2025 %}
+    </div>
+  </div>
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Mechanicon 2025
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <p class="drac-text drac-line-height drac-text-white">
+        Some impressions of Mechanicon 2025
+      </p>
+
+      <ul class="drac-list drac-list-unordered drac-list-cyan">
+        {% for link in current_year.links %}
+        <li class="drac-text drac-text-white">
+          <a href="{{link.url}}" class="drac-anchor drac-text drac-text-white drac-text-pink--hover">
+            {{link.title}}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <p class="drac-text drac-line-height drac-text-white mt-5">
+        If you took some photos/videos and want to add a link there, please let us know!
+      </p>
+
+      <p class="drac-text drac-text-bold drac-line-height drac-text-cyan mt-5">
+        Thank you all! We hope to see you again!<span id="blinking-cursor">_</span>
+      </p>
+
+      {% include stay_up_to_date.html %}
+    </div>
+  </div>
+
+  <div id="sponsors" class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-purple-cyan drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Sponsors
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <div class="sponsor-img flex-wrap">
+        {% for sponsor in site.data.sponsors %}
+        <a href="{{sponsor.website}}" title="{{sponsor.name}}" class="sponsor-img-wrapper drac-box drac-bg-{{sponsor.box_background}} drac-rounded-lg me-3 mb-3 p-2 p-lg-4">
+          <img alt="{{sponsor.name}}" src="{{sponsor.image_path}}" />
+        </a>
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="schedule" class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-yellow-pink drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Schedule 2025
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <table class="drac-table">
+        <thead>
+          <tr>
+            <th class="drac-text drac-bg-orange drac-text-black drac-table-header" colspan="2">
+              Main Stage / Exhibition
+            </th>
+          </tk>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="drac-text drac-text-white">
+              12:30
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Open Doors
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              14:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Official Start
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              14:00 – 18:30
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Keyboard exhibition
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              17:30
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Raffle (incl. official Goodbye afterwards)
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              18:30
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Official Ending
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="drac-table drac-my-lg">
+        <thead>
+          <tr>
+            <th class="drac-text drac-bg-pink drac-text-black drac-table-header" colspan="2">
+             Talks - Upstairs @ GMK Room
+            </th>
+          </tk>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="drac-text drac-text-white">
+              13:00 - 14:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Workshop From Layout to PCB – A Quick Guide
+              <br/>
+              by:
+              <a class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover" href="https://www.linkedin.com/in/lars-gregori">Lars Gregori</a> & <a class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover" href="https://ncxy.de/">Purox</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              14:20 - 14:35
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              ThinkPad input devices and their influence on mechanical keyboards
+              <br/>
+              by:
+              <a class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover" href="https://chaos.social/@stdevel">Christian Stankowic</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              14:40 - 14:55
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              mnhTTn - flat but klonk
+              <br/>
+              by:
+              <a class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover" href="https://corteximplant.com/@fooker">fooker</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              15:00 - 16:00
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Beyond the Mold: What's new at GMK Keycaps
+              <br/>
+              by:
+              <a class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover" href="https://www.gmk.net">GMK Keylab</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              16:05 - 16:20
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Tastaturen - Ein Drama mit 10 Finger (15min Edition)
+              <br/>
+              by:
+              <a class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover" href="https://corteximplant.com/@ink">ink</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="drac-text drac-text-white">
+              16:25 - 16:40
+            </td>
+            <td class="drac-text drac-text-white" style="max-width: 200px">
+              Ergonomische Split Keyboards von A-Z - Entwicklung eines eigenen Keyboards
+              <br/>
+              by:
+              MyLogo (on Discord)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -27,6 +27,37 @@ image: "assets/images/twitter_card.jpg"
     </div>
   </div>
 
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-yellow-pink drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          Stay up to date!
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      {% include stay_up_to_date.html %}
+    </div>
+  </div>
+
+  <div class="row mt-2 mb-4">
+    <div class="col-lg-3 mb-4">
+      <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
+        <h2 class="drac-heading drac-heading-xl drac-text-black">
+          History
+        </h2>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <p class="drac-text drac-line-height drac-text-white">
+        Learn about events in the past. Checkout these links to get an idea how it was like :)
+      </p>
+
+      {% include history_navigation.html %}
+    </div>
+  </div>
+
+  {% comment %}
   <div id="registration" class="row mt-2 mb-4">
     <div class="col-lg-3 mb-4">
       <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
@@ -71,6 +102,7 @@ image: "assets/images/twitter_card.jpg"
       </ul>
     </div>
   </div>
+  {% endcomment %}
 
   <div id="about" class="row mt-2 mb-4">
     <div class="col-lg-3 mb-4">
@@ -464,24 +496,6 @@ image: "assets/images/twitter_card.jpg"
       </p>
     </div>
   </div>
-
-  <div class="row mt-2 mb-4">
-    <div class="col-lg-3 mb-4">
-      <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
-        <h2 class="drac-heading drac-heading-xl drac-text-black">
-          History
-        </h2>
-      </div>
-    </div>
-    <div class="col-lg-9">
-      <p class="drac-text drac-line-height drac-text-white">
-        Learn about events in the past. Checkout these links to get an idea how it was like :)
-      </p>
-
-      {% include history_navigation.html %}
-    </div>
-  </div>
-
 
   <div class="row mt-2 mb-4">
     <div class="col-lg-3 mb-4">
