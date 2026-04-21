@@ -1,158 +1,42 @@
 ---
-title:  "Mechanicon 2024"
+title: "Mechanicon 2024"
 description: "This was Mechanicon 2024 in Frankfurt am Main - Europe's biggest Mechanical Keyboard Meetup!"
-layout: default
+layout: archive
 image: "assets/images/twitter_card.jpg"
+year: 2024
+year_key: year_2024
+gradient: orange-yellow
+stay_num: "04"
 ---
-{% assign current_year = site.data.history.year_2024 %}
 
-<div class="container">
-  <div class="row mt-4 mb-5">
-    <div class="col-sm-3 mb-4 mb-md-0">
-      <a href="/">
-        <img src="./assets/images/logo_white.svg" class="img-fluid" alt="Welcome to Mechanicon" />
-      </a>
-    </div>
-
-    <div class="col-sm-9">
-      <h2 class="drac-heading drac-heading-xl drac-text-white drac-text-yellow-pink text-end">
-        Archive: {{ page.title }}
-        <br/>
-        <br/>
-        {{ current_year.date | date: "%B %d, %Y" }}
-        <br/>
-        {{ current_year.venue.city }}
-        <br/>
-        @ {{ current_year.venue.name }}
-      </h2>
-    </div>
+<div class="section-head section-head--sub">
+  <span class="section-head__num">03</span>
+  <h2 class="section-head__title">schedule 2024</h2>
+</div>
+<div class="sched-rows">
+  <div class="sched-row sched-row--open">
+    <div class="sched-row__time">11:30</div>
+    <div><span class="sched-row__name">Open Doors</span></div>
+    <div class="sched-row__kind kind--open">open</div>
   </div>
-
-  <div class="row mt-2 mb-4">
-    <div class="col-lg-3 mb-4">
-    </div>
-    <div class="col-lg-9">
-      {% include history_navigation.html year=2024 %}
-    </div>
+  <div class="sched-row sched-row--open">
+    <div class="sched-row__time">12:00</div>
+    <div><span class="sched-row__name">Official Start</span></div>
+    <div class="sched-row__kind kind--open">open</div>
   </div>
-
-  <div class="row mt-2 mb-4">
-    <div class="col-lg-3 mb-4">
-      <div class="drac-box drac-card drac-bg-cyan-green drac-p-sm">
-        <h2 class="drac-heading drac-heading-xl drac-text-black">
-          Mechanicon 2024
-        </h2>
-      </div>
-    </div>
-    <div class="col-lg-9">
-      <p class="drac-text drac-line-height drac-text-white">
-        Some impressions of Mechanicon 2024
-      </p>
-
-      <ul class="drac-list drac-list-unordered drac-list-cyan">
-        {% for link in current_year.links %}
-        <li class="drac-text drac-text-white">
-          <a href="{{link.url}}" class="drac-anchor drac-text drac-text-white drac-text-pink--hover">
-            {{link.title}}
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-
-      {% include youtube_video.html video_id="y5cq5ejbsJ8" %}
-
-      <p class="drac-text drac-line-height drac-text-white">
-        Credit for this great video goes to
-        <a href="https://www.instagram.com/kevisuals" class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover">kevisuals</a>
-        aka
-        <a href="https://www.instagram.com/mayne069" class="drac-anchor drac-text drac-text-pink drac-text-cyan--hover">mayne069</a>! <3
-      </p>
-
-      <p class="drac-text drac-line-height drac-text-white mt-5">
-        If you took some photos/videos and want to add a link there, please let us know!
-      </p>
-
-      <p class="drac-text drac-text-bold drac-line-height drac-text-cyan mt-5">
-        Thank you all! We hope to see you again!<span id="blinking-cursor">_</span>
-      </p>
-
-      {% include stay_up_to_date.html %}
-    </div>
+  <div class="sched-row sched-row--social">
+    <div class="sched-row__time">12:00 &ndash; 17:00</div>
+    <div><span class="sched-row__name">Keyboard exhibition</span></div>
+    <div class="sched-row__kind kind--social">social</div>
   </div>
-
-  <div id="sponsors" class="row mt-2 mb-4">
-    <div class="col-lg-3 mb-4">
-      <div class="drac-box drac-card drac-bg-purple-cyan drac-p-sm">
-        <h2 class="drac-heading drac-heading-xl drac-text-black">
-          Sponsors
-        </h2>
-      </div>
-    </div>
-    <div class="col-lg-9">
-      <div class="sponsor-img flex-wrap">
-        {% for sponsor in site.data.sponsors_2024 %}
-        <a href="{{sponsor.website}}" title="{{sponsor.name}}" class="sponsor-img-wrapper drac-box drac-bg-{{sponsor.box_background}} drac-rounded-lg me-3 mb-3 p-2 p-lg-4">
-          <img alt="{{sponsor.name}}" src="{{sponsor.image_path}}" />
-        </a>
-        {% endfor %}
-      </ul>
-      </div>
-    </div>
+  <div class="sched-row sched-row--social">
+    <div class="sched-row__time">16:00</div>
+    <div><span class="sched-row__name">Raffle</span><span class="sched-row__by">incl. official Goodbye afterwards</span></div>
+    <div class="sched-row__kind kind--social">social</div>
   </div>
-
-  <div id="schedule" class="row mt-2 mb-4">
-    <div class="col-lg-3 mb-4">
-      <div class="drac-box drac-card drac-bg-yellow-pink drac-p-sm">
-        <h2 class="drac-heading drac-heading-xl drac-text-black">
-          Schedule 2024
-        </h2>
-      </div>
-    </div>
-    <div class="col-lg-9">
-      <table class="drac-table">
-        <tbody>
-          <tr>
-            <td class="drac-text drac-text-white">
-              11:30
-            </td>
-            <td class="drac-text drac-text-white" style="max-width: 200px">
-              Open Doors
-            </td>
-          </tr>
-          <tr>
-            <td class="drac-text drac-text-white">
-              12:00
-            </td>
-            <td class="drac-text drac-text-white" style="max-width: 200px">
-              Official Start
-            </td>
-          </tr>
-          <tr>
-            <td class="drac-text drac-text-white">
-              12:00 – 17:00
-            </td>
-            <td class="drac-text drac-text-white" style="max-width: 200px">
-              Keyboard exhibition
-            </td>
-          </tr>
-          <tr>
-            <td class="drac-text drac-text-white">
-              16:00
-            </td>
-            <td class="drac-text drac-text-white" style="max-width: 200px">
-              Raffle (incl. official Goodbye afterwards)
-            </td>
-          </tr>
-          <tr>
-            <td class="drac-text drac-text-white">
-              17:00
-            </td>
-            <td class="drac-text drac-text-white" style="max-width: 200px">
-              Official Ending
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+  <div class="sched-row sched-row--close">
+    <div class="sched-row__time">17:00</div>
+    <div><span class="sched-row__name">Official Ending</span></div>
+    <div class="sched-row__kind kind--close">close</div>
   </div>
 </div>

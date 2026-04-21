@@ -1,0 +1,42 @@
+{% assign is_home = false %}
+{% if page.url == "/" or page.url == "/index.html" %}
+  {% assign is_home = true %}
+{% endif %}
+{% if is_home %}
+  {% assign link_prefix = "" %}
+{% else %}
+  {% assign link_prefix = "/" %}
+{% endif %}
+
+<header class="topnav{% unless is_home %} is-scrolled{% endunless %}" id="topnav">
+  <div class="topnav__inner">
+    <a href="/" class="topnav__stamp" aria-label="Mechanicon home">
+      <img src="/assets/images/logo_white.svg" alt="Mechanicon">
+    </a>
+
+    <nav class="topnav__links" aria-label="Primary">
+      <a href="{{ link_prefix }}#about"    data-accent="purple">about</a>
+      <a href="{{ link_prefix }}#history"  data-accent="cyan"{% if page.layout == 'archive' %} class="is-active"{% endif %}>history</a>
+      <a href="{{ link_prefix }}#venue"    data-accent="orange">venue</a>
+      {% comment %}
+      <a href="{{ link_prefix }}#sponsors" data-accent="purple">sponsors</a>
+      <a href="{{ link_prefix }}#schedule" data-accent="green">schedule</a>
+      {% endcomment %}
+      <a href="{{ link_prefix }}#faq"      data-accent="pink">faq</a>
+    </nav>
+
+    <div class="topnav__meta">
+      <span class="topnav__date">
+        <span class="topnav__date-mono">2026-10-17</span>
+        <span class="topnav__date-sep">&middot;</span>
+        <span class="topnav__date-city">Frankfurt a.M.</span>
+      </span>
+      <a href="{{ link_prefix }}#stay" class="topnav__cta">&rarr; Discord</a>
+    </div>
+
+    <button class="topnav__burger" aria-label="Open menu" id="topnav-burger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="topnav__scanline" aria-hidden="true"></div>
+</header>

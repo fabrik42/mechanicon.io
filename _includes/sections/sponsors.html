@@ -1,0 +1,24 @@
+<section class="section" id="sponsors">
+  <div class="section-head">
+    <span class="section-head__num">04</span>
+    <h2 class="section-head__title">sponsors</h2>
+    <span class="section-head__tail">{{ site.data.sponsors | size }} makers &middot; 2026</span>
+  </div>
+
+  <p class="section-lede mc-body">
+    these vendors and makers sponsor mechanicon 2026 with materials, prizes,
+    or a table. they are good people. say hi.
+  </p>
+
+  <div class="sponsor-grid">
+    {% for sponsor in site.data.sponsors %}
+    <a href="{{ sponsor.website }}" class="sponsor-tile sponsor-tile--{{ sponsor.box_background }}" title="{{ sponsor.name }}" target="_blank" rel="noopener">
+      <img class="sponsor-tile__img" src="{{ sponsor.image_path }}" alt="{{ sponsor.name }}" />
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="sponsor-cta">
+    <a class="mc-cta mc-cta-purple" href="mailto:hello@mechanicon.io">&rarr; Become a Sponsor</a>
+  </div>
+</section>

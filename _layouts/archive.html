@@ -1,0 +1,63 @@
+---
+layout: default
+---
+{% assign year_key = page.year_key %}
+{% assign year_data = site.data.history[year_key] %}
+
+<!-- Archive subheader -->
+<section class="archive-sub archive-sub--{{ page.gradient }}">
+  <div class="archive-sub__eyebrow">&#x2B90; archive &middot; past edition</div>
+  <h1 class="archive-sub__year mc-shout">{{ page.year }}</h1>
+  <pre class="archive-sub__spec mc-spec">{{ year_data.date | date: "%B %d, %Y" }}        {{ year_data.venue.name }} &middot; {{ year_data.venue.city }}</pre>
+</section>
+
+<!-- Year strip navigation -->
+<nav class="year-strip" aria-label="Jump to year">
+  <a href="/2025"{% if page.year == 2025 %} class="is-active"{% endif %}>2025</a>
+  <a href="/2024"{% if page.year == 2024 %} class="is-active"{% endif %}>2024</a>
+  <a href="/2023"{% if page.year == 2023 %} class="is-active"{% endif %}>2023</a>
+  <a href="/2018"{% if page.year == 2018 %} class="is-active"{% endif %}>2018</a>
+  <a href="/2017"{% if page.year == 2017 %} class="is-active"{% endif %}>2017</a>
+  <a href="/2016"{% if page.year == 2016 %} class="is-active"{% endif %}>2016</a>
+</nav>
+
+<div class="archive-layout">
+  <div class="archive-layout__content">
+
+    {% if year_data.links %}
+    <div class="section-head section-head--sub">
+      <span class="section-head__num">01</span>
+      <h2 class="section-head__title">impressions {{ page.year }}</h2>
+    </div>
+    <ul>
+      {% for link in year_data.links %}
+      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div class="archive-ctas">
+      <div class="thanks">Thank you all! We hope to see you again.</div>
+    </div>
+
+    {% assign sponsors_key = 'sponsors_' | append: page.year %}
+    {% assign year_sponsors = site.data[sponsors_key] %}
+    {% if year_sponsors %}
+    <div class="section-head section-head--sub">
+      <span class="section-head__num">02</span>
+      <h2 class="section-head__title">sponsors {{ page.year }}</h2>
+    </div>
+    <div class="sponsor-grid">
+      {% for sponsor in year_sponsors %}
+      <a href="{{ sponsor.website }}" class="sponsor-tile sponsor-tile--{{ sponsor.box_background }}" title="{{ sponsor.name }}" target="_blank" rel="noopener">
+        <img class="sponsor-tile__img" src="{{ sponsor.image_path }}" alt="{{ sponsor.name }}" />
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {{ content }}
+  </div>
+</div>
+
+{% include sections/stay.html num=page.stay_num %}

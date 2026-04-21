@@ -1,0 +1,308 @@
+// ============================================================
+// Mechanicon Design System — colors & type
+// v1.0 · Built on top of Dracula UI's palette
+// ============================================================
+
+// ─── Font faces ───
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("fonts/FiraCode-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("fonts/FiraCode-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "D-DIN Condensed";
+  src: url("fonts/D-DINCondensed-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// ─── Design tokens ───
+
+:root {
+  // Core surfaces
+  --mc-bg:         #22212C;
+  --mc-surface:    #282A36;
+  --mc-line:       #44475A;
+  --mc-fg:         #F8F8F2;
+  --mc-fg-muted:   #BFBFBF;
+  --mc-ink:        #21252A;
+  --mc-ink-soft:   #4B4F58;
+
+  // Accents (Dracula palette)
+  --mc-pink:       #FF80BF;
+  --mc-cyan:       #80FFEA;
+  --mc-purple:     #BD93F9;
+  --mc-yellow:     #FFFF80;
+  --mc-orange:     #FFCA80;
+  --mc-green:      #8AFF80;
+  --mc-red:        #FF5555;
+
+  // Accent alpha variants
+  --mc-pink-20:    rgba(255, 128, 191, .20);
+  --mc-cyan-20:    rgba(128, 255, 234, .20);
+  --mc-purple-20:  rgba(189, 147, 249, .20);
+  --mc-yellow-20:  rgba(255, 255, 128, .20);
+  --mc-orange-20:  rgba(255, 202, 128, .20);
+  --mc-green-20:   rgba(138, 255, 128, .20);
+
+  // Signature gradients
+  --mc-grad-yellow-pink:   linear-gradient(120deg, #FFFF80 0%, #FF80BF 100%);
+  --mc-grad-pink-purple:   linear-gradient(120deg, #FF80BF 0%, #BD93F9 100%);
+  --mc-grad-cyan-green:    linear-gradient(120deg, #80FFEA 0%, #8AFF80 100%);
+  --mc-grad-purple-cyan:   linear-gradient(120deg, #BD93F9 0%, #80FFEA 100%);
+  --mc-grad-orange-yellow: linear-gradient(120deg, #FFCA80 0%, #FFFF80 100%);
+
+  // Glow shadows
+  --mc-glow-pink:   -2px 6px 10px rgba(255, 128, 191, .35);
+  --mc-glow-cyan:   -2px 6px 10px rgba(128, 255, 234, .35);
+  --mc-glow-purple: -2px 6px 10px rgba(189, 147, 249, .35);
+  --mc-glow-yellow: -2px 6px 10px rgba(255, 255, 128, .35);
+  --mc-glow-orange: -2px 6px 10px rgba(255, 202, 128, .35);
+  --mc-glow-green:  -2px 6px 10px rgba(138, 255, 128, .35);
+
+  // Typography
+  --mc-font-display: "D-DIN Condensed", "DIN Condensed", "Barlow Condensed", "Oswald", "Bebas Neue", "Arial Narrow", sans-serif;
+  --mc-font-mono:    "Fira Code", "Space Mono", "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  // Font sizes
+  --mc-fs-hero:    128px;
+  --mc-fs-display: 88px;
+  --mc-fs-h1:      56px;
+  --mc-fs-h2:      40px;
+  --mc-fs-h3:      28px;
+  --mc-fs-body:    16px;
+  --mc-fs-mono-lg: 20px;
+  --mc-fs-small:   13px;
+
+  // Leading & tracking
+  --mc-lh-display: 0.9;
+  --mc-lh-tight:   1.1;
+  --mc-lh-body:    1.5;
+  --mc-tr-display: -0.01em;
+  --mc-tr-mono:     0;
+
+  // Spacing (4-based)
+  --mc-space-xs:   4px;
+  --mc-space-sm:   8px;
+  --mc-space-md:  16px;
+  --mc-space-lg:  24px;
+  --mc-space-xl:  40px;
+  --mc-space-2xl: 64px;
+  --mc-space-3xl: 104px;
+
+  // Radius
+  --mc-radius-sm:  4px;
+  --mc-radius-md:  8px;
+  --mc-radius-lg: 16px;
+
+  // Motion
+  --mc-ease-hover: 150ms ease-out;
+  --mc-ease-state: 240ms cubic-bezier(.2, .8, .2, 1);
+}
+
+// ─── Base / reset ───
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--mc-bg);
+  color: var(--mc-fg);
+  font-family: var(--mc-font-mono);
+  font-size: var(--mc-fs-body);
+  line-height: var(--mc-lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--mc-pink);
+  color: var(--mc-ink);
+}
+
+// ─── Display type (headlines) ───
+
+.mc-hero, .mc-shout, .mc-h1, .mc-h2, .mc-h3 {
+  font-family: var(--mc-font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: var(--mc-lh-display);
+  letter-spacing: var(--mc-tr-display);
+  margin: 0;
+}
+
+.mc-hero  { font-size: var(--mc-fs-hero); }
+.mc-shout { font-size: var(--mc-fs-display); }
+
+.mc-h1, .mc-h2, .mc-h3 {
+  line-height: var(--mc-lh-tight);
+}
+
+.mc-h1 { font-size: var(--mc-fs-h1); }
+.mc-h2 { font-size: var(--mc-fs-h2); }
+.mc-h3 { font-size: var(--mc-fs-h3); }
+
+.mc-on-light { color: var(--mc-ink); }
+.mc-on-dark  { color: var(--mc-fg); }
+
+// ─── Body / mono ───
+
+.mc-body {
+  font-family: var(--mc-font-mono);
+  font-size: var(--mc-fs-body);
+  line-height: var(--mc-lh-body);
+}
+
+.mc-spec {
+  font-family: var(--mc-font-mono);
+  font-size: var(--mc-fs-mono-lg);
+  line-height: 1.7;
+  margin: 0;
+  white-space: pre;
+}
+
+.mc-small {
+  font-family: var(--mc-font-mono);
+  font-size: var(--mc-fs-small);
+  line-height: 1.5;
+}
+
+b, strong, .mc-strong { font-weight: 700; }
+
+// ─── Backgrounds & gradients ───
+
+.mc-bg-dark    { background: var(--mc-bg);      color: var(--mc-fg); }
+.mc-bg-surface { background: var(--mc-surface); color: var(--mc-fg); }
+
+$gradient-names: yellow-pink, pink-purple, cyan-green, purple-cyan, orange-yellow;
+
+@each $name in $gradient-names {
+  .mc-bg-#{$name} {
+    background: var(--mc-grad-#{$name});
+    color: var(--mc-ink);
+  }
+}
+
+// ─── Cards ───
+
+.mc-card {
+  border-radius: var(--mc-radius-md);
+  padding: var(--mc-space-md);
+  background: var(--mc-surface);
+  box-shadow: var(--mc-glow-purple);
+
+  &--pink   { box-shadow: var(--mc-glow-pink); }
+  &--cyan   { box-shadow: var(--mc-glow-cyan); }
+  &--yellow { box-shadow: var(--mc-glow-yellow); }
+  &--orange { box-shadow: var(--mc-glow-orange); }
+  &--green  { box-shadow: var(--mc-glow-green); }
+}
+
+.mc-feature {
+  border-radius: var(--mc-radius-md);
+  padding: var(--mc-space-xl);
+  color: var(--mc-ink);
+}
+
+// ─── CTAs ───
+
+.mc-cta {
+  display: inline-block;
+  font-family: var(--mc-font-mono);
+  font-weight: 700;
+  font-size: var(--mc-fs-body);
+  line-height: 1.5;
+  padding: var(--mc-space-sm) var(--mc-space-md);
+  border-radius: var(--mc-radius-md);
+  border: 1px solid currentColor;
+  text-decoration: none;
+  transition: color var(--mc-ease-hover), background var(--mc-ease-hover);
+  background: transparent;
+
+  &:hover {
+    color: var(--mc-fg);
+    background: rgba(255, 255, 255, .06);
+  }
+
+  $cta-colors: cyan, pink, purple, green, orange, yellow;
+  @each $color in $cta-colors {
+    &-#{$color} { color: var(--mc-#{$color}); }
+  }
+
+  &-solid {
+    background: var(--mc-ink);
+    color: var(--mc-fg);
+    border-color: var(--mc-ink);
+
+    &:hover {
+      background: transparent;
+      color: var(--mc-ink);
+    }
+  }
+}
+
+// ─── Text accents ───
+
+$text-colors: pink, cyan, purple, yellow, orange, green;
+@each $color in $text-colors {
+  .mc-text-#{$color} { color: var(--mc-#{$color}); }
+}
+.mc-text-muted { color: var(--mc-fg-muted); }
+
+a.mc-link {
+  color: var(--mc-cyan);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color var(--mc-ease-hover);
+
+  &:hover { color: var(--mc-fg); }
+}
+
+// ─── Return glyph ───
+
+.mc-return {
+  font-family: var(--mc-font-display);
+  display: inline-grid;
+  place-items: center;
+  background: var(--mc-ink);
+  color: var(--mc-fg);
+  aspect-ratio: 1 / 1;
+  border-radius: var(--mc-radius-sm);
+  line-height: 1;
+  font-weight: 700;
+
+  &--sm { width: 32px;  font-size: 22px; }
+  &--md { width: 64px;  font-size: 44px; }
+  &--lg { width: 128px; font-size: 88px; }
+}
+
+// ─── Containers ───
+
+.mc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--mc-space-lg);
+
+  &--wide { max-width: 1440px; }
+}
+
+// ─── Print ───
+
+@media print {
+  body { background: #fff; color: var(--mc-ink); }
+  .mc-feature { box-shadow: none; }
+}
