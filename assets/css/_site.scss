@@ -460,13 +460,9 @@ a { color: inherit; }
   margin: 0 auto;
 
   &__thumb {
-    position: relative;
-    aspect-ratio: 16 / 9;
     background: #3A3A42;
     border-radius: var(--mc-radius-md);
     overflow: hidden;
-    display: grid;
-    place-items: center;
     box-shadow: var(--mc-glow-cyan);
   }
 
@@ -955,6 +951,19 @@ a { color: inherit; }
     }
 
     p { max-width: 72ch; margin: 0 0 14px; }
+  }
+}
+
+.archive-videos {
+  display: grid;
+  gap: 24px;
+  margin: 32px 0;
+  max-width: 820px;
+
+  &__item {
+    border-radius: var(--mc-radius-md);
+    overflow: hidden;
+    box-shadow: var(--mc-glow-cyan);
   }
 }
 

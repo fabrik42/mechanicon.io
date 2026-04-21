@@ -36,6 +36,17 @@ layout: default
     </ul>
     {% endif %}
 
+    {% if page.videos %}
+    <div class="archive-videos">
+      {% for vid in page.videos %}
+      <div class="archive-videos__item">
+        {% include youtube_video.html video_id=vid.id %}
+        {% if vid.caption %}<p class="mc-small mc-text-muted" style="margin: 8px 0 8px 8px;">{{ vid.caption }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
     <div class="archive-ctas">
       <div class="thanks">Thank you all! We hope to see you again.</div>
     </div>
