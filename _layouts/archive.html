@@ -8,7 +8,7 @@ layout: default
 <section class="archive-sub archive-sub--{{ page.gradient }}">
   <div class="archive-sub__eyebrow">&#x2B90; archive &middot; past edition</div>
   <h1 class="archive-sub__year mc-shout">{{ page.year }}</h1>
-  <pre class="archive-sub__spec mc-spec">{{ year_data.date | date: "%B %d, %Y" }}        {{ year_data.venue.name }} &middot; {{ year_data.venue.city }}</pre>
+  <p class="archive-sub__spec">{{ year_data.date | date: "%B %d, %Y" }} &middot; {{ year_data.venue.name }} &middot; {{ year_data.venue.city }}</p>
 </section>
 
 <!-- Year strip navigation -->

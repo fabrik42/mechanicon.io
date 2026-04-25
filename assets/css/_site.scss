@@ -274,6 +274,7 @@ a { color: inherit; }
 .section {
   padding: 40px 0 64px;
   position: relative;
+  scroll-margin-top: 40px;
 
   &--tight { padding: 16px 0 48px; }
 }
@@ -1095,7 +1096,7 @@ a { color: inherit; }
     }
 
     &__meta { display: none; }
-    &__burger { display: inline-flex; }
+    &__burger { display: inline-flex; flex-direction: column; }
   }
 
   .hero { padding: 48px 32px; }
