@@ -40,3 +40,12 @@
     });
   });
 })();
+
+// Blinking cursor Easter egg
+(function () {
+  var cursor = document.getElementById('blinking-cursor');
+  if (!cursor) return;
+  setInterval(function () {
+    cursor.style.visibility = cursor.style.visibility === 'hidden' ? 'visible' : 'hidden';
+  }, 1000);
+})();
