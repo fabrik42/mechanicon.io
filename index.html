@@ -9,8 +9,8 @@ image: "assets/images/twitter_card.jpg"
 {
   "@context": "https://schema.org",
   "@type": "Event",
-  "name": "Mechanicon 2026",
-  "description": "Europe's biggest mechanical keyboard meetup. Free entry, 60+ show-and-type tables, talks, workshops, and a huge raffle.",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description }}",
   "startDate": "2026-10-17T10:00:00+02:00",
   "endDate": "2026-10-17T17:00:00+02:00",
   "eventStatus": "https://schema.org/EventScheduled",
@@ -29,15 +29,15 @@ image: "assets/images/twitter_card.jpg"
   "image": "https://mechanicon.io/assets/images/twitter_card.jpg",
   "organizer": {
     "@type": "Organization",
-    "name": "Mechanicon",
-    "url": "https://mechanicon.io"
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
   },
   "offers": {
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "EUR",
     "availability": "https://schema.org/InStock",
-    "url": "https://mechanicon.io"
+    "url": "{{ site.url }}"
   },
   "isAccessibleForFree": true
 }
