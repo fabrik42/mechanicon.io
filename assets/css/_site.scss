@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // =============================================================
 // Mechanicon site — page-level styles
 // Built on top of _colors_and_type.scss
@@ -115,7 +117,7 @@ a { color: inherit; }
 
       &.is-active::before { transform: scaleX(1); }
 
-      $accent-colors: pink, cyan, purple, green, orange, yellow;
+      $accent-colors: "pink", "cyan", "purple", "green", "orange", "yellow";
       @each $color in $accent-colors {
         &[data-accent="#{$color}"].is-active { color: var(--mc-#{$color}); }
       }
@@ -202,7 +204,7 @@ a { color: inherit; }
   isolation: isolate;
   background: var(--mc-grad-yellow-pink);
 
-  $hero-gradients: yellow-pink, pink-purple, purple-cyan, cyan-green, orange-yellow;
+  $hero-gradients: "yellow-pink", "pink-purple", "purple-cyan", "cyan-green", "orange-yellow";
   @each $name in $hero-gradients {
     &--#{$name} { background: var(--mc-grad-#{$name}); }
   }
@@ -437,18 +439,18 @@ a { color: inherit; }
   }
 
   $card-styles: (
-    green:  (bg: var(--mc-grad-cyan-green),    glow: var(--mc-glow-green)),
-    orange: (bg: var(--mc-grad-orange-yellow), glow: var(--mc-glow-orange)),
-    purple: (bg: var(--mc-grad-purple-cyan),   glow: var(--mc-glow-purple)),
-    cyan:   (bg: var(--mc-grad-cyan-green),    glow: var(--mc-glow-cyan)),
-    pink:   (bg: var(--mc-grad-pink-purple),   glow: var(--mc-glow-pink)),
-    yellow: (bg: var(--mc-grad-yellow-pink),   glow: var(--mc-glow-yellow)),
+    "green":  (bg: var(--mc-grad-cyan-green),    glow: var(--mc-glow-green)),
+    "orange": (bg: var(--mc-grad-orange-yellow), glow: var(--mc-glow-orange)),
+    "purple": (bg: var(--mc-grad-purple-cyan),   glow: var(--mc-glow-purple)),
+    "cyan":   (bg: var(--mc-grad-cyan-green),    glow: var(--mc-glow-cyan)),
+    "pink":   (bg: var(--mc-grad-pink-purple),   glow: var(--mc-glow-pink)),
+    "yellow": (bg: var(--mc-grad-yellow-pink),   glow: var(--mc-glow-yellow)),
   );
 
   @each $name, $vals in $card-styles {
     &--#{$name} {
-      background: map-get($vals, bg);
-      box-shadow: map-get($vals, glow);
+      background: map.get($vals, bg);
+      box-shadow: map.get($vals, glow);
     }
   }
 }
@@ -571,7 +573,7 @@ a { color: inherit; }
   &--uhk           { background: #d2d2d2; }
   &--yuzu          { background: rgb(41, 30, 44); }
 
-  $gradient-names: yellow-pink, pink-purple, cyan-green, purple-cyan, orange-yellow;
+  $gradient-names: "yellow-pink", "pink-purple", "cyan-green", "purple-cyan", "orange-yellow";
   @each $name in $gradient-names {
     &--#{$name} { background: var(--mc-grad-#{$name}); }
   }
@@ -823,7 +825,7 @@ a { color: inherit; }
   display: grid;
   gap: 20px;
 
-  $archive-gradients: cyan-green, orange-yellow, pink-purple, yellow-pink, purple-cyan;
+  $archive-gradients: "cyan-green", "orange-yellow", "pink-purple", "yellow-pink", "purple-cyan";
   @each $name in $archive-gradients {
     &--#{$name} { background: var(--mc-grad-#{$name}); }
   }

@@ -187,7 +187,7 @@ b, strong, .mc-strong { font-weight: 700; }
 .mc-bg-dark    { background: var(--mc-bg);      color: var(--mc-fg); }
 .mc-bg-surface { background: var(--mc-surface); color: var(--mc-fg); }
 
-$gradient-names: yellow-pink, pink-purple, cyan-green, purple-cyan, orange-yellow;
+$gradient-names: "yellow-pink", "pink-purple", "cyan-green", "purple-cyan", "orange-yellow";
 
 @each $name in $gradient-names {
   .mc-bg-#{$name} {
@@ -237,7 +237,7 @@ $gradient-names: yellow-pink, pink-purple, cyan-green, purple-cyan, orange-yello
     background: rgba(255, 255, 255, .06);
   }
 
-  $cta-colors: cyan, pink, purple, green, orange, yellow;
+  $cta-colors: "cyan", "pink", "purple", "green", "orange", "yellow";
   @each $color in $cta-colors {
     &-#{$color} { color: var(--mc-#{$color}); }
   }
@@ -256,7 +256,7 @@ $gradient-names: yellow-pink, pink-purple, cyan-green, purple-cyan, orange-yello
 
 // ─── Text accents ───
 
-$text-colors: pink, cyan, purple, yellow, orange, green;
+$text-colors: "pink", "cyan", "purple", "yellow", "orange", "green";
 @each $color in $text-colors {
   .mc-text-#{$color} { color: var(--mc-#{$color}); }
 }
