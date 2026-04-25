@@ -29,6 +29,10 @@ twitter_username: mechanicon
 github_username:  fabrik42
 event_url: "https://ti.to/mechanicon/mechanicon-2026"
 
+twitter:
+  username: mechanicon
+  card: summary_large_image
+
 author:
   twitter: mechanicon
 
